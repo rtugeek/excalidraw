@@ -1,0 +1,36 @@
+{
+  "name": "excalidraw",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@excalidraw/excalidraw": "*",
+    "@widget-js/core": "24.1.1-beta.80",
+    "browser-fs-access": "0.29.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^7.2.0",
+    "@widget-js/vite-plugin-widget": "24.1.1-beta.72",
+    "eslint": "^9.39.2",
+    "simple-git-hooks": "^2.13.1",
+    "typescript": "^5",
+    "vite": "^5.0.12"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "build:offline": "vite build --mode offline",
+    "release": "widget release -t ftp",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --cache . --fix"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md}": [
+      "eslint --cache --fix"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "name": "widgetjs.cn.excalidraw",
+  "version": "1.0.0",
+  "requiredAppVersion": "25.12.5",
+  "author": "Neo Fu",
+  "homepage": "",
+  "title": {
+    "zh-CN": "Excalidraw 绘图",
+    "en-US": "Excalidraw"
+  },
+  "description": {
+    "zh-CN": "一款手绘风格的虚拟白板工具，方便您绘制流程图、架构图等。",
+    "en-US": "Virtual whiteboard for sketching hand-drawn like diagrams."
+  },
+  "entry": "/",
+  "zipUrl": "https://widgetjs.cn/excalidraw/widget.zip",
+  "hash": true,
+  "url": "",
+  "widgets": [
+    {
+      "name": "widgetjs.cn.excalidraw.default",
+      "title": {
+        "zh-CN": "画板",
+        "en-US": "Excalidraw"
+      },
+      "description": {
+        "zh-CN": "一款手绘风格的虚拟画板。",
+        "en-US": "Virtual whiteboard for sketching hand-drawn like diagrams."
+      },
+      "keywords": [
+        "recommend"
+      ],
+      "security": false,
+      "permissions": [],
+      "lang": "zh-CN",
+      "width": 1,
+      "height": 1,
+      "maxWidth": 1,
+      "webviewTag": false,
+      "maxHeight": 1,
+      "minWidth": 1,
+      "minHeight": 1,
+      "movable": true,
+      "singleton": false,
+      "resizable": true,
+      "path": "/",
+      "meta": {},
+      "backgroundThrottling": false,
+      "previewImage": "/preview.png",
+      "categories": [
+        "utilities"
+      ],
+      "supportDeployMode": 65536,
+      "routes": [],
+      "browserWindowOptions": {
+        "backgroundThrottling": false,
+        "skipTaskbar": false,
+        "titleBarStyle": "default",
+        "transparent": false,
+        "resizable": true,
+        "frame": true,
+        "minimizable": true,
+        "maximizable": true,
+        "width": 1200,
+        "center": true,
+        "height": 800,
+        "movable": true,
+        "preventDefaultClose": true
+      },
+      "socialLinks": [
+        {
+          "name": "github",
+          "link": "https://github.com/rtugeek/excalidraw"
+        }
+      ]
+    }
+  ],
+  "pages": []
+}
