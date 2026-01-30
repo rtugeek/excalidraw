@@ -9,8 +9,8 @@ dependencies:
     specifier: '*'
     version: 0.18.0(react-dom@19.0.0)(react@19.0.0)
   '@widget-js/core':
-    specifier: 24.1.1-beta.80
-    version: 24.1.1-beta.80
+    specifier: 24.1.1-beta.81
+    version: 24.1.1-beta.81
   browser-fs-access:
     specifier: 0.29.1
     version: 0.29.1
@@ -1988,8 +1988,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@widget-js/core@24.1.1-beta.80:
-    resolution: {integrity: sha512-IKJ0o6HbUaQ8BYltYdF6PWfPOGTZri+U2cbJq0D4gUmcYvKLmFkaFBdt8ReOQouO/u8iWK/8VC8MlkBhESPhjw==}
+  /@widget-js/core@24.1.1-beta.81:
+    resolution: {integrity: sha512-QVKF7pKZgTor4fRFNONavwEWbi/5DrJZydKqfkp+AOKIfo9BOU5BZfvueULllm7XGh9PLuccKmamlgzR8PmBBg==}
     dependencies:
       '@supabase/supabase-js': 2.93.2
       '@types/css-tree': 2.3.11

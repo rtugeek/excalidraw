@@ -6,7 +6,7 @@ import type {
 } from '@excalidraw/excalidraw/types'
 import type { ResolvablePromise } from '../utils'
 
-import { BrowserWindowApi, Channel, DeployedWidgetApi, TrayApiEvent } from '@widget-js/core'
+import { BrowserWindowApi, Channel, DeployedWidgetApi, TrayApi, TrayApiEvent } from '@widget-js/core'
 import React, {
   Children,
   cloneElement,
@@ -68,8 +68,16 @@ export default function ExampleApp({
       BrowserWindowApi.show()
     }
   })
-  useIpcListener(Channel.BROWSER_WINDOW, (event) => {
+  useIpcListener(Channel.BROWSER_WINDOW, async (event) => {
     if (event == 'event::cn.widgetjs.core.browser-window.close') {
+      const tip = localStorage.getItem('show-tray-tip')
+      if (!tip) {
+        await TrayApi.displayBalloon({
+          content: '点击托盘图标，可再次显示窗口',
+          title: '提示',
+        })
+        localStorage.setItem('show-tray-tip', 'false')
+      }
       BrowserWindowApi.hide()
     }
   })

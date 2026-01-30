@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@excalidraw/excalidraw": "*",
-    "@widget-js/core": "24.1.1-beta.80",
+    "@widget-js/core": "24.1.1-beta.81",
     "browser-fs-access": "0.29.1",
     "react": "19.0.0",
     "react-dom": "19.0.0"
